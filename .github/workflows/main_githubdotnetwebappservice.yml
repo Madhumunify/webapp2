@@ -54,4 +54,4 @@ jobs:
           app-name: 'githubdotnetwebappservice'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6BDDB9603A00443DB610A5C6C9E111F2 }}
-          package: .
+          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
